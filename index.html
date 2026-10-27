@@ -1,0 +1,213 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Our Anniversary</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400;1,6..96,500&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow column, like a letter read at dusk — Table Mountain on the horizon, then the letter, our year in places, reasons, and a promise. */
+:root{
+  --sky-top:#141a33;
+  --sky-mid:#3b2f57;
+  --sunset:#f0a273;
+  --blush:#f6cfc0;
+  --ink:#f5eee9;
+  --muted:#c9bccb;
+  --card:#1e2340;
+  --line:rgba(246,207,192,.18);
+  --mountain:#0c1024;
+  --display:"Bodoni Moda", "Didot", "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--sky-top);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65}
+.wrap{
+  max-width:640px;margin:0 auto;
+  padding-left:max(20px, env(safe-area-inset-left, 0px));
+  padding-right:max(20px, env(safe-area-inset-right, 0px));
+}
+img{display:block;max-width:100%;height:auto}
+
+/* Hero */
+.hero{position:relative;background:linear-gradient(180deg,var(--sky-top) 0%,var(--sky-mid) 48%,#b06a6e 78%,var(--sunset) 100%);overflow:hidden}
+.hero .wrap{padding-block:64px 0;position:relative;z-index:2;display:flex;flex-direction:column;gap:14px}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--blush);font-weight:600}
+h1{font-family:var(--display);font-weight:400;font-style:italic;font-size:clamp(46px,13vw,84px);line-height:.98;margin:0;text-wrap:balance}
+h1 span{display:block;font-style:normal;font-weight:600}
+.lede{margin:6px 0 0;color:var(--blush);max-width:36ch}
+.stars{position:absolute;inset:0;z-index:1;pointer-events:none}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:var(--ink);opacity:.7;animation:twinkle 4s ease-in-out infinite}
+@keyframes twinkle{50%{opacity:.15}}
+.hero-photo{margin:22px 0 0;padding:10px 10px 12px;background:var(--ink);transform:rotate(-1.5deg);box-shadow:0 20px 40px rgba(0,0,0,.35);max-width:100%}
+.hero-photo img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.hero-photo figcaption{font-family:var(--display);font-style:italic;color:var(--sky-top);font-size:16px;padding-top:8px;text-align:center}
+.mountain{display:block;width:100%;height:auto;margin-top:-30px;position:relative;z-index:1}
+.mountain path{fill:var(--mountain)}
+
+/* Sections */
+section{padding-block:56px}
+.mtn-base{background:var(--mountain)}
+h2{font-family:var(--display);font-weight:500;font-style:italic;font-size:clamp(30px,8vw,42px);line-height:1.1;margin:0 0 20px;color:var(--blush);text-wrap:balance}
+.letter p{margin:0 0 18px;max-width:62ch}
+.letter p:first-of-type::first-letter{font-family:var(--display);font-size:3.4em;float:left;line-height:.85;padding:6px 10px 0 0;color:var(--sunset)}
+.sign{font-family:var(--display);font-style:italic;font-size:26px;color:var(--sunset);margin-top:8px}
+
+/* Places */
+.chapter{display:flex;flex-direction:column;gap:14px;margin-bottom:44px}
+.chapter:last-child{margin-bottom:0}
+.chapter-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px dashed var(--line);padding-bottom:8px}
+.chapter-head h3{font-family:var(--display);font-weight:600;font-size:26px;margin:0}
+.chapter-head span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--sunset)}
+.chapter > p{margin:0;color:var(--muted);max-width:60ch}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+@media (max-width:520px){.pair{grid-template-columns:1fr}}
+.photo{margin:0;background:var(--card);border:1px solid var(--line);padding:8px;min-width:0}
+.photo img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.photo figcaption{font-size:13px;color:var(--muted);padding:8px 2px 2px}
+.moments{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:0;padding:0;list-style:none}
+.moments li{background:var(--card);border:1px solid var(--line);padding:14px 16px;min-width:0}
+.moments b{display:block;font-family:var(--display);font-size:19px;font-weight:600;margin-bottom:2px}
+.moments span{color:var(--muted);font-size:15px}
+
+/* Reasons */
+.reasons{background:linear-gradient(160deg,var(--card),#2a2547);border:1px solid var(--line);border-radius:4px;padding:28px 22px;display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.count{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+#reason{font-family:var(--display);font-size:clamp(22px,6vw,28px);line-height:1.3;margin:0;min-height:5.2em;transition:opacity .35s ease}
+button{font:600 15px var(--body);color:var(--sky-top);background:var(--sunset);border:0;border-radius:999px;padding:12px 22px;cursor:pointer}
+button:hover{background:var(--blush)}
+button:focus-visible{outline:2px solid var(--blush);outline-offset:3px}
+
+/* Closing */
+.closing-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:24px;align-items:center}
+@media (max-width:520px){.closing-grid{grid-template-columns:1fr}}
+.closing p{margin:0 0 16px;max-width:58ch}
+.next{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0;padding:0;list-style:none}
+.next li{border:1px solid var(--sunset);color:var(--sunset);border-radius:999px;padding:6px 14px;font-size:14px}
+footer{padding-block:40px 56px;color:var(--muted);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<header class="hero">
+  <div class="stars" id="stars"></div>
+  <div class="wrap">
+    <div class="eyebrow">One year · 27 October 2026</div>
+    <h1>Happy<span>anniversary,</span>Mitchell</h1>
+    <p class="lede">A small corner of the internet, made just for you. Everything on it is true.</p>
+    <figure class="hero-photo">
+      <img src="img/beach.jpg" alt="Mitchell and Ishe smiling on the beach in Cape Town at golden hour">
+      <figcaption>Cape Town, golden hour</figcaption>
+    </figure>
+  </div>
+  <svg class="mountain" viewBox="0 0 400 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 90 L0 70 L30 64 L52 50 L70 46 L84 30 L96 24 L104 25 L250 23 L262 26 L280 40 L300 48 L318 44 L332 32 L346 36 L362 52 L384 60 L400 62 L400 90 Z"/>
+  </svg>
+</header>
+
+<main>
+  <section class="mtn-base letter">
+    <div class="wrap">
+      <h2>My love,</h2>
+      <p>One year ago today, I had no idea how much my life was about to change. Over this past year you've shown me what true love really looks like. You've been loving, caring and supportive, and you've been my biggest supporter and my number one fan, helping me every single step of the way.</p>
+      <p>On the days I can't see my own value, you see it for me and you remind me. When my head is spinning, you help me slow down and make the right call. And you keep your standards high, which means I never get comfortable or complacent with you. You make me want to keep showing up as a better man.</p>
+      <p>I admire the grace you carry into everything you do. You work smart, and somehow you always find a way to get it done. You're not a woman of many words, but your actions speak louder than anything anyone has ever said to me.</p>
+      <p>Thank you for this year, Mitchell. I love you, and I can't wait for every year after it.</p>
+      <div class="sign">Always yours, Ishe</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Our year, in places</h2>
+
+      <div class="chapter">
+        <div class="chapter-head"><h3>Pretoria</h3><span>Our staycation</span></div>
+        <p>Quiet, peaceful, just us. And that sunrise: coffee in hand, a fresh breeze, the sky slowly turning gold. Still one of the best mornings we've ever had together.</p>
+        <figure class="photo">
+          <img src="img/pretoria.jpg" alt="Mitchell and Ishe in sunglasses on a sunny day at the staycation" loading="lazy" style="aspect-ratio:4/5;object-position:center 30%">
+          <figcaption>Sun, slow days, and you</figcaption>
+        </figure>
+      </div>
+
+      <div class="chapter">
+        <div class="chapter-head"><h3>Cape Town</h3><span>Sept – Oct</span></div>
+        <p>A week by the ocean that I keep replaying in my head.</p>
+        <figure class="photo">
+          <img src="img/aquarium.jpg" alt="Mitchell and Ishe in front of a huge tank at the V&amp;A Waterfront aquarium" loading="lazy" style="aspect-ratio:4/5">
+          <figcaption>The aquarium at the V&amp;A, with the whole ocean behind us</figcaption>
+        </figure>
+        <ul class="moments">
+          <li><b>Beach walks</b><span>Long walks on the sand with the sun going down.</span></li>
+          <li><b>Tokara</b><span>A slow afternoon of wine tasting in the vines.</span></li>
+          <li><b>Camps Bay</b><span>You, lunch with your friends, and that view.</span></li>
+          <li><b>The V&amp;A</b><span>Wandering the aquarium like two big kids.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="mtn-base">
+    <div class="wrap">
+      <h2>Why I love you, one at a time</h2>
+      <div class="reasons">
+        <div class="count" id="count">Reason 1 of 8</div>
+        <p id="reason" aria-live="polite">You showed me what true love actually looks like.</p>
+        <button id="next" type="button">Tell me another</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <h2>Here's to year two</h2>
+      <div class="closing-grid">
+        <figure class="hero-photo" style="margin:0;transform:rotate(1.5deg)">
+          <img src="img/mirror.jpg" alt="Mitchell and Ishe in a round mirror selfie" style="aspect-ratio:4/5">
+          <figcaption>Us, exactly as we are</figcaption>
+        </figure>
+        <div>
+          <p>More sunrises. More beach walks. More quiet coffee mornings. We still have places on our list, and I want to see every one of them with you.</p>
+          <ul class="next">
+            <li>Boulders Beach</li>
+            <li>Chapman's Peak</li>
+            <li>Muizenberg</li>
+            <li>…everywhere after</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">Made with love, for Mitchell only</div></footer>
+
+<script>
+(function(){
+  var s=document.getElementById('stars');
+  for(var i=0;i<46;i++){
+    var d=document.createElement('i');d.className='star';
+    d.style.left=(Math.random()*100)+'%';d.style.top=(Math.random()*40)+'%';
+    d.style.animationDelay=(Math.random()*4)+'s';
+    if(Math.random()>.8){d.style.width=d.style.height='3px'}
+    s.appendChild(d);
+  }
+  var reasons=[
+    "You showed me what true love actually looks like.",
+    "You're my biggest supporter and my number one fan.",
+    "You help me see my value on the days I can't.",
+    "You help me think clearly and make the right decisions.",
+    "You keep your standards high, so I never get complacent.",
+    "The grace you carry into everything you do.",
+    "You work smart and always find a way to get it done.",
+    "You don't need many words. Your actions say it all."
+  ];
+  var i=0,r=document.getElementById('reason'),c=document.getElementById('count');
+  document.getElementById('next').addEventListener('click',function(){
+    i=(i+1)%reasons.length;
+    r.style.opacity=0;
+    setTimeout(function(){r.textContent=reasons[i];c.textContent='Reason '+(i+1)+' of '+reasons.length;r.style.opacity=1},300);
+  });
+})();
+</script>
+
+</body></html>
