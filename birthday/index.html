@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mitchell at 25</title>
+<meta name="description" content="Happy 25th birthday, Mitchell.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Happy birthday, Mitchell">
+<meta property="og:description" content="Happy quarter century, baby girl.">
+<meta property="og:image" content="https://zvicasso.github.io/anniversary/birthday/img/graduation.jpg">
+<meta name="theme-color" content="#1f1410">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%82%3C/text%3E%3C/svg%3E">
+<style>html,body{margin:0}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<style>
+/* Layout: a birthday "cover issue" — giant 25 behind the graduation portrait, then the letter, a wall of frames, and 25 candles to blow out. Single warm-dark look by choice. */
+:root{
+  --cocoa:#1f1410;
+  --cocoa-2:#2b1c16;
+  --gold:#d9b46a;
+  --rose:#c8323b;
+  --cream:#f3e7da;
+  --muted:#bba796;
+  --line:rgba(217,180,106,.22);
+  --display:"Gloock", "Didot", Georgia, serif;
+  --script:"Instrument Serif", Georgia, serif;
+  --body:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--cocoa);color:var(--cream);font-family:var(--body);font-size:17px;line-height:1.7}
+.wrap{max-width:1000px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+img{display:block;max-width:100%;height:auto}
+
+/* Cover */
+.cover{position:relative;overflow:hidden;background:radial-gradient(120% 80% at 70% 10%, #3a241b 0%, var(--cocoa) 60%)}
+.cover .wrap{padding-block:56px 64px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:32px;align-items:center;position:relative}
+.big25{position:absolute;right:-2vw;top:-4vw;font-family:var(--display);font-size:clamp(220px,46vw,520px);line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--line);pointer-events:none;user-select:none;z-index:0}
+.cover-text{position:relative;z-index:1;display:flex;flex-direction:column;gap:16px;min-width:0}
+.kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,8.5vw,92px);line-height:.95;margin:0;text-wrap:balance}
+h1 em{font-family:var(--script);font-style:italic;color:var(--gold);display:block;font-size:.72em;margin-bottom:.12em}
+.sub{font-family:var(--script);font-style:italic;font-size:clamp(22px,4.5vw,28px);color:var(--muted);margin:0;line-height:1.3}
+.cover-photo{position:relative;z-index:1;margin:0}
+.cover-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:220px 220px 4px 4px;border:1px solid var(--line)}
+.cover-photo figcaption{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:10px;text-align:center}
+@media (max-width:700px){.cover .wrap{grid-template-columns:1fr}.cover-photo{max-width:420px}}
+
+/* Letter */
+.letter{background:var(--cocoa-2);border-block:1px solid var(--line)}
+.letter .wrap{padding-block:64px;max-width:720px}
+.letter h2{font-family:var(--script);font-style:italic;font-weight:400;font-size:clamp(36px,8vw,52px);color:var(--gold);margin:0 0 24px;line-height:1.05}
+.letter p{margin:0 0 20px}
+.letter p.pull{font-family:var(--display);font-size:clamp(24px,5.5vw,32px);line-height:1.25;color:var(--cream);margin:32px 0;padding-left:20px;border-left:2px solid var(--rose);text-wrap:balance}
+.sign{font-family:var(--script);font-style:italic;font-size:30px;color:var(--gold);margin-top:12px;line-height:1.2}
+.sign small{display:block;font-family:var(--body);font-style:normal;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* Frames */
+.frames .wrap{padding-block:64px}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.section-head h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,6vw,44px);margin:0;line-height:1.1}
+.section-head span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.wall{columns:3 240px;column-gap:16px}
+.frame{break-inside:avoid;margin:0 0 16px;background:var(--cream);padding:10px 10px 14px;transition:transform .35s ease}
+.frame:nth-child(3n+1){transform:rotate(-1.2deg)}
+.frame:nth-child(3n+2){transform:rotate(.8deg)}
+.frame:nth-child(3n){transform:rotate(-.4deg)}
+.frame:hover{transform:rotate(0) scale(1.015)}
+.frame img{width:100%}
+.frame figcaption{font-family:var(--script);font-style:italic;font-size:19px;color:var(--cocoa);padding-top:8px;text-align:center;line-height:1.25}
+
+/* Candles */
+.wish{background:radial-gradient(90% 70% at 50% 100%, #3a241b 0%, var(--cocoa) 70%)}
+.wish .wrap{padding-block:64px 72px;display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
+.wish h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,6vw,44px);margin:0}
+.wish p{margin:0;color:var(--muted);max-width:44ch}
+.candles{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:10px 8px;width:100%;max-width:520px;padding:0;margin:8px 0;list-style:none}
+@media (max-width:460px){.candles{grid-template-columns:repeat(9,minmax(0,1fr))}}
+.candle{display:flex;flex-direction:column;align-items:center;gap:3px}
+.flame{width:9px;height:15px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(circle at 50% 70%, #fff6d8 0%, var(--gold) 45%, var(--rose) 100%);box-shadow:0 0 12px 3px rgba(217,180,106,.55);animation:flicker 1.6s ease-in-out infinite alternate;transition:opacity .4s ease, transform .4s ease}
+.stick{width:6px;height:28px;border-radius:2px;background:repeating-linear-gradient(160deg,var(--cream) 0 5px,var(--rose) 5px 9px)}
+.candle.out .flame{opacity:0;transform:translateY(-8px) scale(.4);box-shadow:none}
+@keyframes flicker{0%{transform:scaleY(1) rotate(-2deg)}100%{transform:scaleY(1.12) rotate(2deg)}}
+button{font:600 15px var(--body);color:var(--cocoa);background:var(--gold);border:0;border-radius:999px;padding:13px 26px;cursor:pointer}
+button:hover{background:var(--cream)}
+button:focus-visible{outline:2px solid var(--cream);outline-offset:3px}
+.reveal{font-family:var(--display);font-size:clamp(26px,6vw,40px);line-height:1.2;color:var(--cream);max-width:20ch;text-wrap:balance}
+.reveal em{font-family:var(--script);color:var(--gold)}
+footer{padding-block:28px 48px;text-align:center;color:var(--muted);font-size:12px;letter-spacing:.2em;text-transform:uppercase;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <div class="big25" aria-hidden="true">25</div>
+  <div class="wrap">
+    <div class="cover-text">
+      <div class="kicker">13 November 2026 · The quarter-century issue</div>
+      <h1><em>Happy birthday,</em>Mitchell</h1>
+      <p class="sub">Twenty-five years of grace, and a whole new year ahead.</p>
+    </div>
+    <figure class="cover-photo">
+      <img src="img/graduation.jpg" alt="Mitchell in her graduation gown holding a large bouquet of red roses">
+      <figcaption>The graduate</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+  <section class="letter">
+    <div class="wrap">
+      <h2>Happy quarter century, baby girl.</h2>
+      <p>I wish you nothing but the best life has to offer. Thank you for being such a grounded person, with a strong presence of mind and a strong sense of self. Thank you for being someone who can always be counted on to give sound advice (when you want to), and thank you for giving me a front-row seat on your journey.</p>
+      <p>I look forward to watching you conquer the world in your own way, with grace and humility and a little crushing out every now and then. Best believe you will always have my support, and you will always have me by your side.</p>
+      <p class="pull">I have enjoyed watching you grow into the woman you are becoming.</p>
+      <p>I know there is so much more that lies ahead of you, and I have no doubt you will easily tap into the frequency of abundance. Thank you for having such high standards, because they force some of us to chase after our dreams with more vigour.</p>
+      <p>I wish you a great 26th year. The sky is not even the limit.</p>
+      <div class="sign"><small>I love you always</small>Ishe</div>
+    </div>
+  </section>
+
+  <section class="frames">
+    <div class="wrap">
+      <div class="section-head"><h2>Every version of you</h2><span>A few favourites</span></div>
+      <div class="wall">
+        <figure class="frame"><img src="img/portrait.jpg" alt="Mitchell posing against a white wall in a white top" loading="lazy"><figcaption>Effortless</figcaption></figure>
+        <figure class="frame"><img src="img/terrace.jpg" alt="Mitchell in sunglasses at a sunny terrace table" loading="lazy"><figcaption>Sunlight suits you</figcaption></figure>
+        <figure class="frame"><img src="img/silly.jpg" alt="A playful, very close-up selfie of Mitchell" loading="lazy"><figcaption>The face only I get to see</figcaption></figure>
+        <figure class="frame"><img src="img/glasses.jpg" alt="Mitchell in red glasses and a camel blazer" loading="lazy"><figcaption>Boss mode</figcaption></figure>
+        <figure class="frame"><img src="img/summer.jpg" alt="Mitchell in a bucket hat and sunglasses in the sun" loading="lazy"><figcaption>Summer, always</figcaption></figure>
+        <figure class="frame"><img src="img/soft.jpg" alt="A soft, smiling selfie of Mitchell" loading="lazy"><figcaption>Soft</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="wish">
+    <div class="wrap">
+      <h2>Make a wish</h2>
+      <p>Twenty-five candles, one for every year. Close your eyes, make a wish, then blow.</p>
+      <ul class="candles" id="candles" aria-hidden="true"></ul>
+      <button id="blow" type="button">Blow out the candles</button>
+      <div class="reveal" id="reveal" aria-live="polite" hidden>Here's to year twenty-six. <em>The sky is not even the limit.</em></div>
+    </div>
+  </section>
+</main>
+
+<footer>With all my love, for Mitchell · Ishe</footer>
+
+<script>
+(function(){
+  var ul=document.getElementById('candles'),btn=document.getElementById('blow'),rev=document.getElementById('reveal');
+  for(var i=0;i<25;i++){
+    var li=document.createElement('li');li.className='candle';
+    li.innerHTML='<span class="flame" style="animation-delay:'+(Math.random()*1.6).toFixed(2)+'s"></span><span class="stick"></span>';
+    ul.appendChild(li);
+  }
+  var lit=true;
+  btn.addEventListener('click',function(){
+    var c=ul.children;
+    if(lit){
+      var order=[].slice.call(c).map(function(_,i){return i}).sort(function(){return Math.random()-.5});
+      order.forEach(function(idx,n){setTimeout(function(){c[idx].classList.add('out')},n*55)});
+      setTimeout(function(){rev.hidden=false},25*55+200);
+      btn.textContent='Light them again';
+    }else{
+      for(var i=0;i<c.length;i++)c[i].classList.remove('out');
+      rev.hidden=true;btn.textContent='Blow out the candles';
+    }
+    lit=!lit;
+  });
+})();
+</script>
+
+</body>
+</html>
